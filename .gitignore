@@ -118,3 +118,5 @@ fabric.properties
 *.css
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,sass
+
+*.js
