@@ -1,0 +1,83 @@
+html {
+    font-size: 20px;
+}
+
+div.container {
+    width: 75%;
+    height: 100vh;
+    margin: .5rem auto;
+
+    background-color: #f7f7f7;
+    box-shadow: 5px 5px 20px 0 #888888;
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+header {
+    padding: .2rem;
+
+    > div {
+        font-size: 2.2rem;
+
+        img {
+            width: 4rem;
+        }
+
+        img, > div {
+            float: left;
+            margin: .5rem 1rem;
+        }
+
+        > div {
+            margin-top: 1rem;
+            margin-left: 7%;
+
+            h1#docTitle {
+                display: inline;
+                color: #676767;
+            }
+        }
+    }
+
+    nav {
+        clear: left;
+        background-color: #3293E9;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                flex-grow: 1;
+                text-align: center;
+                position: relative;
+
+                &:hover {
+                    background-color: #2B82CF;
+
+                    a::after {
+                        width: calc(100% - .4rem);
+                    }
+                }
+
+                a {
+                    display: block;
+                    padding: .4rem 0;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    color: white;
+
+                    &::after {
+                        content: '';
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: .17rem;
+                        left: .2rem;
+                        width: 0;
+                        height: .15rem;
+                        transition: width 250ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
