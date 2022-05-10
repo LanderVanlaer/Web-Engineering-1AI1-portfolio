@@ -9,6 +9,7 @@ em {
 div.container {
     width: 75%;
     margin: .5rem auto;
+    max-width: 1500px;
 
     box-shadow: 5px 5px 20px 0 #888888;
     font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
@@ -105,5 +106,18 @@ footer {
 
     div {
         margin: .4rem 0;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    body > div.container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        font-size: 10px;
     }
 }
