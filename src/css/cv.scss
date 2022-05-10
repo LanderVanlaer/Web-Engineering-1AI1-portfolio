@@ -1,0 +1,103 @@
+main {
+    padding: 0 2rem 2rem;
+    line-height: normal;
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 1rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin: 1.8rem 0 .75rem;
+    }
+
+    p {
+        margin-top: .4rem;
+        font-size: .9rem;
+    }
+
+    a {
+
+        &, &:visited {
+            color: inherit;
+            text-decoration-thickness: 1px;
+        }
+
+        &:hover {
+            color: #676767;
+        }
+
+        &.button {
+            background-color: #2B82CF;
+            border-radius: .2rem;
+            color: white;
+            padding: .4rem;
+            font-size: 1rem;
+            text-decoration: none;
+            margin: 1rem;
+            display: inline-block;
+            //border: 1px solid darkblue;
+            //box-shadow: 2px 2px 0 0 black;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: #195abd;
+            }
+        }
+    }
+
+    div.center {
+        margin: 2rem 0 0;
+        text-align: center;
+    }
+
+    section {
+        border-top: 1px solid black;
+        margin-top: 2rem;
+
+        article {
+            h3 {
+
+            }
+
+            > ul {
+                > li {
+                    margin-left: .7rem;
+                    color: #666;
+
+                    p, span, ul {
+                        color: black;
+                    }
+
+                    > p {
+                        margin: .5rem 20% 1rem 0;
+                        line-height: normal;
+                    }
+
+                    span b {
+                        font-weight: bold;
+                    }
+
+                    > ul {
+                        margin-left: 2rem;
+                        padding-right: 3rem;
+                        font-size: .8rem;
+
+                        > li {
+                            display: inline-block;
+
+                            &::before {
+                                content: ' - ';
+                            }
+
+                            &:first-child::before {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
