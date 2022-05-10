@@ -5,6 +5,23 @@ main {
         margin: 2rem 0;
         font-weight: bold;
         color: #195abd;
+
+        a {
+            padding: 0;
+            text-decoration-thickness: 3px;
+
+            &:visited {
+                color: #195abd;
+            }
+
+            &:hover {
+                color: #2B82CF;
+            }
+
+            &:active {
+                color: #3293e9;
+            }
+        }
     }
 
     aside {
