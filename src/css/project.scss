@@ -1,0 +1,148 @@
+main {
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    aside {
+        font-size: .75rem;
+        margin: 0 40% 1rem 2rem;
+
+        span {
+            font-weight: bold;
+            color: red;
+            display: block;
+        }
+
+        a {
+            &:visited, & {
+                color: black;
+            }
+
+            &:hover {
+                color: grey;
+            }
+
+            &:active {
+                color: lightgrey;
+            }
+        }
+    }
+
+    #poster {
+        position: relative;
+        overflow: hidden;
+        margin: 2rem 4rem;
+        border-radius: 2rem;
+
+
+        > div#background {
+            background-image: url("https://source.unsplash.com/pfR18JNEMv8/1920x1080");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top;
+            //filter: blur(5px);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+        }
+
+        > div {
+            width: 20rem;
+            margin: 5rem 0 0 3rem;
+            background-color: white;
+            border-radius: .5rem;
+            padding: .6rem .6rem .5rem;
+            box-shadow: 2px 2px 50px 0 black;
+
+
+            &:nth-child(2) {
+                transform: rotate(-25deg);
+            }
+
+            &:nth-child(3) {
+                margin: -5rem 0 0 60%;
+                transform: rotate(5deg);
+            }
+
+            &:nth-child(4) {
+                margin: -5rem 0 0 4.5rem;
+                transform: rotate(-5deg);
+                width: 25rem;
+            }
+
+            &:nth-child(5) {
+                transform: rotate(20deg);
+                margin: 0 0 5rem 55%;
+            }
+
+            a {
+                text-decoration: none;
+
+                &, &:visited {
+                    color: #195abd;
+                }
+
+                &:hover {
+                    color: darkgrey;
+                }
+
+                &:active {
+                    color: lightgrey;
+                }
+            }
+
+            &.text {
+                font-size: 1rem;
+                line-height: 1.2rem;
+
+                h3 {
+                    font-size: 2rem;
+                    padding-bottom: .5rem;
+                    margin-bottom: .5rem;
+                    border-bottom: 1px solid black;
+                    line-height: 2rem;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
+
+                ul li {
+                    list-style-type: square;
+                    margin-left: 1rem;
+                }
+            }
+
+            &.image {
+                img[alt="block diagram Microsoft To Do CLI"] {
+                    width: 100%;
+                }
+
+                &#used-technologies {
+                    div {
+                        margin-top: 1rem;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        align-items: center;
+                        justify-items: center;
+                        row-gap: 1rem;
+
+                        img {
+                            max-height: 50px;
+                            max-width: 75px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
