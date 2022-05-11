@@ -1,0 +1,107 @@
+main {
+    form {
+        width: 70%;
+        margin: 0 auto;
+
+        ul#errors {
+            display: inline-block;
+            background-color: #8a051e;
+            margin: 1rem;
+            border-radius: .2rem;
+            box-shadow: 1px 1px 5px black;
+
+            li {
+                color: white;
+                list-style: square;
+                padding: .2rem .5rem;
+                margin-bottom: .1rem;
+                display: block;
+                border-top: 3px solid white;
+
+                &:first-child {
+                    border: none;
+                }
+
+                &::before {
+                    content: '- ';
+                }
+            }
+        }
+
+        label {
+            font-size: 1.2rem;
+        }
+
+        fieldset {
+            border-top: 1px solid #ccc;
+            margin-top: 1rem;
+            padding-top: 1rem;
+
+            legend {
+                padding: .5rem .5rem .5rem 0;
+                color: #888888;
+            }
+        }
+
+        textarea, button, input {
+            margin: .7rem 0 1rem;
+            padding: .3rem;
+            font-family: monospace;
+            font-size: .75rem;
+            display: block;
+            width: 100%;
+            border-radius: .3rem;
+
+            &:focus {
+                outline: none;
+                background-color: #f6f6f6;
+            }
+        }
+
+        input {
+            border-radius: .2rem .2rem 0 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 1px #dcdcdc;
+        }
+
+        button[type="submit"], button[type="reset"] {
+            width: 25%;
+            background-color: #3293e9;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            display: inline-block;
+
+            &:hover, &:focus {
+                background-color: #2B82CF;
+            }
+
+            &:active {
+                background-color: #195abd;
+            }
+        }
+
+        .split {
+            display: flex;
+            column-gap: .5rem;
+
+            > * {
+                flex-grow: 1;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        #subject {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}

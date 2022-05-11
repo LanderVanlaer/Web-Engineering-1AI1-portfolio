@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Lander Van laer</title>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/css/contact.css" rel="stylesheet" type="text/css">
+    <script defer src="/js/script.js"></script>
+    <script defer src="/js/contact.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <img alt="Microsoft To-Do icon"
+                     src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft_To-Do_icon.png">
+                <div>
+                    Lander Van laer &lt;/&gt; <h1 id="docTitle">Contact</h1>
+                </div>
+            </div>
+            <nav aria-label="Site menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/cv.html">CV</a></li>
+                    <li><a href="/project.html">Project</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="mailto:r0879775@student.thomasmore.be" enctype="text/plain"
+                  id="contact-form" method="post">
+                <ul id="errors"></ul>
+                <input name="category" type="hidden" value="Contact page Project Microsoft To Do CLI">
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <div class="split">
+                        <label>Firstname:
+                            <input id="firstname" name="firstname" placeholder="firstname" type="text">
+                        </label>
+                        <label>Lastname:
+                            <input id="lastname" name="lastname" placeholder="lastname" type="text">
+                        </label>
+                    </div>
+                    <label>Telephone / GSM
+                        <input id="phonenumber" name="phonenumber" placeholder="+32412345678" type="tel">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <label>Subject:
+                        <input id="subject" name="subject" placeholder="Subject" type="text">
+                    </label>
+                    <label><textarea cols="30" id="body" name="body" placeholder="body" rows="10"></textarea>
+                    </label>
+                </fieldset>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+        <footer>
+            <div>
+                Copyright &copy; <a href="https://github.com/LanderVanlaer" target="_blank">Lander Van laer</a>
+                <a href="https://www.thomasmore.be/" target="_blank">Thomas More</a> Mechelen-Antwerpen
+                vzw - <a href="https://www.thomasmore.be/campussen/campus-de-nayer" target="_blank">Campus De Nayer</a>
+            </div>
+            <div>
+                Professionele bachelor elektronica-ict <em>2021&minus;<span id="yearNow"></span></em>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
