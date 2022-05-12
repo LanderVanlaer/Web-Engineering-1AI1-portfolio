@@ -4,7 +4,7 @@ const time: { wait: number; typing: number; maxVariation: number; delete: number
   typing: 125,
   maxVariation: 50,
   wait: 2000,
-  delete: 100,
+  delete: 50,
 };
 let activeMessageIndex = 0;
 let messageCharIndex = 0;
