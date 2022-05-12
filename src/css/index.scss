@@ -2,7 +2,7 @@ main {
     div#welcome-message {
         display: block;
         text-align: center;
-        margin-top: 1rem;
+        margin: 1rem 0;
 
         div#message, div#blinker {
             display: inline-block;
@@ -31,5 +31,9 @@ main {
                 }
             }
         }
+    }
+
+    canvas#bubbles {
+        width: 100%;
     }
 }
