@@ -1,0 +1,35 @@
+main {
+    div#welcome-message {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+
+        div#message, div#blinker {
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+
+        div#message {
+            font-size: 3rem;
+        }
+
+        div#blinker {
+            animation: linear blink infinite 1.1s;
+            width: .25rem;
+            height: 3rem;
+            background-color: black;
+
+            @keyframes blink {
+                from {
+                    visibility: visible;
+                }
+                50% {
+                    visibility: hidden;
+                }
+                to {
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+}
