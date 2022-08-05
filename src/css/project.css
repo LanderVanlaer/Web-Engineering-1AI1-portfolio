@@ -1,0 +1,179 @@
+main h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: #195abd;
+}
+main h2 a {
+  padding: 0;
+  text-decoration-thickness: 3px;
+}
+main h2 a:visited {
+  color: #195abd;
+}
+main h2 a:hover {
+  color: #2B82CF;
+}
+main h2 a:active {
+  color: #3293e9;
+}
+main aside {
+  font-size: 0.75rem;
+  margin: 0 0 1rem 2rem;
+}
+main aside span {
+  font-weight: bold;
+  color: red;
+  display: block;
+  margin-bottom: 1rem;
+}
+main aside a:visited, main aside a {
+  color: black;
+}
+main aside a:hover {
+  color: grey;
+}
+main aside a:active {
+  color: lightgrey;
+}
+main #poster {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 4rem;
+  border-radius: 2rem;
+}
+main #poster > div {
+  width: 20rem;
+  margin: 5rem 0 0 3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.6rem 0.5rem;
+  box-shadow: 2px 2px 50px 0 black;
+  display: none;
+}
+main #poster > div#background {
+  background-image: url("https://source.unsplash.com/pfR18JNEMv8/1920x1080");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  display: block;
+}
+main #poster > div:nth-child(2) {
+  transform: rotate(-25deg);
+}
+main #poster > div:nth-child(3) {
+  margin: -5rem 0 0 60%;
+  transform: rotate(5deg);
+}
+main #poster > div:nth-child(4) {
+  margin: -5rem 0 0 4.5rem;
+  transform: rotate(-5deg);
+  width: 25rem;
+}
+main #poster > div:nth-child(5) {
+  transform: rotate(20deg);
+  margin: 0 0 5rem 55%;
+}
+main #poster > div a {
+  text-decoration: none;
+}
+main #poster > div a, main #poster > div a:visited {
+  color: #195abd;
+}
+main #poster > div a:hover {
+  color: darkgrey;
+}
+main #poster > div a:active {
+  color: lightgrey;
+}
+main #poster > div.text {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+main #poster > div.text h3 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+  line-height: 2rem;
+}
+main #poster > div.text p {
+  margin-bottom: 1rem;
+}
+main #poster > div.text p:first-letter {
+  font-size: 1.3em;
+}
+main #poster > div.text ul li {
+  list-style-type: square;
+  margin-left: 1rem;
+}
+main #poster > div.image img[alt="block diagram Microsoft To Do CLI"] {
+  width: 100%;
+}
+main #poster > div.image#used-technologies div {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  row-gap: 1rem;
+}
+main #poster > div.image#used-technologies div img {
+  max-height: 50px;
+  max-width: 75px;
+}
+main div#slideshow {
+  position: relative;
+  height: 500px;
+  width: 750px;
+  margin: 2rem auto;
+}
+main div#slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity ease-in-out 1.5s;
+  border-radius: 1rem;
+}
+main div#slideshow img.visible {
+  opacity: 1;
+  transition: opacity ease-in-out 1.5s;
+}
+
+@media only screen and (max-width: 1700px) {
+  div#poster {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0.5rem;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  div#poster > div:nth-child(3) {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    z-index: 100;
+  }
+  div#poster > div:nth-child(4) {
+    margin-left: 3rem;
+  }
+  div#poster > div:nth-child(5) {
+    margin-left: 50%;
+  }
+}
+
+/*# sourceMappingURL=project.css.map */

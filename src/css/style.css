@@ -1,0 +1,106 @@
+html {
+  font-size: 20px;
+}
+
+em {
+  font-style: italic;
+}
+
+div.container {
+  width: 75%;
+  margin: 0.5rem auto;
+  max-width: 1500px;
+  box-shadow: 5px 5px 20px 0 #888888;
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+}
+
+header {
+  padding: 0.2rem;
+}
+header > div {
+  font-size: 2.2rem;
+}
+header > div img {
+  width: 4rem;
+}
+header > div img, header > div > div {
+  float: left;
+  margin: 0.5rem 1rem;
+}
+header > div > div {
+  margin-top: 1rem;
+  margin-left: 7%;
+}
+header > div > div h1#docTitle {
+  display: inline;
+  color: #676767;
+}
+header nav {
+  clear: left;
+  background-color: #3293E9;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+header nav ul li {
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+}
+header nav ul li:hover {
+  background-color: #2B82CF;
+}
+header nav ul li:hover a::after {
+  width: calc(100% - .4rem);
+}
+header nav ul li a {
+  display: block;
+  padding: 0.4rem 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+header nav ul li a::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  bottom: 0.17rem;
+  left: 0.2rem;
+  width: 0;
+  height: 0.15rem;
+  transition: width 250ms ease-in-out;
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #195abd 60%, #3293e9 100%);
+}
+footer a, footer a:visited {
+  color: white;
+}
+footer a:hover, footer a:visited:hover {
+  color: #ccc;
+}
+footer div {
+  margin: 0.4rem 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  body > div.container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

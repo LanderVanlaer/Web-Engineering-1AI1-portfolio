@@ -110,16 +110,5 @@ fabric.properties
 # https://plugins.jetbrains.com/plugin/12206-codestream
 .idea/codestream.xml
 
-### Sass ###
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-*.css
-
-# End of https://www.toptal.com/developers/gitignore/api/intellij,sass
-
-*.js
-
 ### Node ###
 node_modules/

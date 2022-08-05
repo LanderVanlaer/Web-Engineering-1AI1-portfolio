@@ -1,0 +1,75 @@
+main {
+  padding: 0 2rem 2rem;
+  line-height: normal;
+}
+main h2 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 1rem;
+}
+main h3 {
+  font-size: 1.3rem;
+  margin: 1.8rem 0 0.75rem;
+}
+main p {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+}
+main a, main a:visited {
+  color: inherit;
+  text-decoration-thickness: 1px;
+}
+main a:hover {
+  color: #676767;
+}
+main a.button {
+  background-color: #2B82CF;
+  border-radius: 0.2rem;
+  color: white;
+  padding: 0.4rem;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+main a.button:hover {
+  background-color: #195abd;
+}
+main div.center {
+  margin: 2rem 0 0;
+  text-align: center;
+}
+main section {
+  border-top: 1px solid black;
+  margin-top: 2rem;
+}
+main section article > ul > li {
+  margin-left: 0.7rem;
+  color: #666;
+}
+main section article > ul > li p, main section article > ul > li span, main section article > ul > li ul {
+  color: black;
+}
+main section article > ul > li > p {
+  margin: 0.5rem 20% 1rem 0;
+  line-height: normal;
+}
+main section article > ul > li span b {
+  font-weight: bold;
+}
+main section article > ul > li > ul {
+  margin-left: 2rem;
+  padding-right: 3rem;
+  font-size: 0.8rem;
+}
+main section article > ul > li > ul > li {
+  display: inline-block;
+}
+main section article > ul > li > ul > li::before {
+  content: " - ";
+}
+main section article > ul > li > ul > li:first-child::before {
+  content: none;
+}
+
+/*# sourceMappingURL=cv.css.map */

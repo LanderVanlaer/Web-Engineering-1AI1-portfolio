@@ -1,0 +1,89 @@
+main form {
+  width: 70%;
+  margin: 0 auto;
+}
+main form ul#errors {
+  display: inline-block;
+  background-color: #8a051e;
+  margin: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 1px 1px 5px black;
+}
+main form ul#errors li {
+  color: white;
+  list-style: square;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.1rem;
+  display: block;
+  border-top: 3px solid white;
+}
+main form ul#errors li:first-child {
+  border: none;
+}
+main form ul#errors li::before {
+  content: "- ";
+}
+main form label {
+  font-size: 1.2rem;
+}
+main form fieldset {
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+main form fieldset legend {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  color: #888888;
+}
+main form textarea, main form button, main form input {
+  margin: 0.7rem 0 1rem;
+  padding: 0.3rem;
+  font-family: monospace;
+  font-size: 0.75rem;
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+main form textarea:focus, main form button:focus, main form input:focus {
+  outline: none;
+  background-color: #f6f6f6;
+}
+main form input {
+  border-radius: 0.2rem 0.2rem 0 0;
+  border-bottom: 1px solid #ccc;
+}
+main form textarea {
+  resize: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px #dcdcdc;
+}
+main form button[type=submit], main form button[type=reset] {
+  width: 25%;
+  background-color: #3293e9;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  display: inline-block;
+}
+main form button[type=submit]:hover, main form button[type=submit]:focus, main form button[type=reset]:hover, main form button[type=reset]:focus {
+  background-color: #2B82CF;
+}
+main form button[type=submit]:active, main form button[type=reset]:active {
+  background-color: #195abd;
+}
+main form .split {
+  display: flex;
+  column-gap: 0.5rem;
+}
+main form .split > * {
+  flex-grow: 1;
+}
+main form .split > * input {
+  width: 100%;
+}
+main form #subject {
+  display: inline-block;
+  width: 50%;
+}
+
+/*# sourceMappingURL=contact.css.map */
